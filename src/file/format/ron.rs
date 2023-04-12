@@ -51,7 +51,7 @@ fn from_ron_value(
             let map = values
                 .iter()
                 .map(|(key, value)| -> Result<_, Box<dyn Error + Send + Sync>> {
-                    let key = key.clone().into_rust::<String>()?;
+                    let key = key.clone().into_rust()?;
                     let value = from_ron_value(uri, value.clone())?;
 
                     Ok((key, value))

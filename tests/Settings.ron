@@ -18,5 +18,13 @@
     }
   ),
   FOO: "FOO should be overridden",
-  bar: "I am bar"
+  bar: "I am bar",
+    map: {
+        1: '1',
+        2: '4',
+        3: '9',
+        4: '1',
+        5: '2',
+        6: '3',
+    },
 )

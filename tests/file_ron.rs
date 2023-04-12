@@ -1,5 +1,6 @@
 #![cfg(feature = "ron")]
 
+use std::collections::HashMap;
 use serde_derive::Deserialize;
 
 use std::path::PathBuf;
@@ -27,6 +28,7 @@ struct Settings {
     place: Place,
     #[serde(rename = "arr")]
     elements: Vec<String>,
+    map: HashMap<u8, char>,
 }
 
 fn make() -> Config {
